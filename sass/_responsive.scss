@@ -1,0 +1,28 @@
+/*
+ *  *
+ *  * Responsive Magic
+ *  *
+*/
+
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+    height: auto;
+    margin-bottom: $primaryPadding / 2;
+    .navigation {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: $primaryPadding * 2;
+    }
+  }
+  footer {
+    padding: $primaryPadding;
+  }
+
+  .content {
+    padding-bottom: $primaryPadding;
+  }
+}

@@ -1,0 +1,188 @@
+/*!
+ *  *
+ *  * Logical.so Web Development
+ *  * Copyright Joel Nichols 2015
+ *  *
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700);
+@import 'bootstrap';
+
+/*
+ *  *
+ *  * Config Variables
+ *  *
+*/
+$primaryFont: 'Source Sans Pro', sans-serif;
+$primaryPadding: 16px;
+
+/*
+ *  *
+ *  * Typography
+ *  *
+*/
+
+body {
+  font-family: $primaryFont;
+}
+
+body, p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+span.logo {
+  a {
+    display: block;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: $primaryPadding / 2;
+    padding-left: 0;
+    padding-right: 0;
+    color: rgba(255,255,255,0.9);
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.5em;
+  text-align: center;
+  margin-top: $primaryPadding;
+  margin-bottom: $primaryPadding;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+/*
+ *  *
+ *  * Primary Elements
+ *  *
+*/
+
+html {
+  background-color: #333;
+}
+
+body {
+  background-color: white;
+}
+
+.header {
+  background-color: #0B2E3B;
+  color: white;
+  height: 270px;
+  width: 100%;
+  margin-bottom: $primaryPadding * 2;
+  .navigation {
+    width: 100%;
+    font-size: 0;
+    text-align: right;
+    ul {
+      text-align: right;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline;
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding: $primaryPadding / 2;
+        a {
+          color: #ccc;
+          font-size: 18px;
+          line-height: 1.5em;
+          text-transform: lowercase;
+        }
+        a:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    small {
+      display: block;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.secondary-block {
+  background-color: #272C34;
+  color: white;
+  padding-top: $primaryPadding;
+  padding-bottom: $primaryPadding;
+  margin-top: $primaryPadding * 2;
+  margin-bottom: $primaryPadding * 2;
+  h2 {
+    color: rgba(255,255,255,0.85);
+  }
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding-top: $primaryPadding * 6;
+  padding-bottom: $primaryPadding * 6;
+  margin-top: $primaryPadding * 4;
+  p {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+
+/*
+ *  *
+ *  * Utility Elements
+ *  *
+*/
+.btn.btn-primary {
+  background-color: #196A87;
+  border-color: #0B2E3B;
+}
+
+.thumbnail {
+  background-color: none;
+  border: none;
+  padding: 0;
+}
+
+/*
+ *  *
+ *  * Responsive Magic
+ *  *
+*/
+@import 'responsive';
